@@ -2,7 +2,7 @@
 
 ## 🌈 &nbsp; wanted-codestates-project-10-6 
 
-### 📎 &nbsp; [과제링크](https://eager-hermann-20a149.netlify.app)
+### 📎 &nbsp; [링크](https://eager-hermann-20a149.netlify.app)
 
 <div align="center">
    <img width="300px" src="https://user-images.githubusercontent.com/87487161/158296076-78723c49-da01-4b3a-92d6-4f048bc5553e.gif"/>
