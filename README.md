@@ -5,8 +5,10 @@
 ### 📎 &nbsp; [과제링크](https://eager-hermann-20a149.netlify.app)
 
 <div align="center">
-<img width="300px" src=""/>
+   <img width="300px" src="https://user-images.githubusercontent.com/87487161/158295805-d258f477-0854-4f43-9af6-8836cf78f6d9.gif"/>
+<img width="300px" src="https://user-images.githubusercontent.com/87487161/158295800-44ddeeb1-5915-4c88-80fa-59c0245d31cf.gif"/>
 </div>
+
 
 <br />
 
