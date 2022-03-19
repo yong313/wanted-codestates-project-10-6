@@ -74,7 +74,9 @@
 <details>
   <summary>복지호</summary>
   <ul>
-   <li></li>
+    <li>공통 컴포넌트 생성 - 상단 네비게이션 바, 하단 이전/다음 버튼 영역, 각 페이지 제목 컴포넌트</li>
+    <li>제출 완료 페이지 생성</li>
+    <li>돌봄 유형 값 리덕스로 상태 관리</li>
   </ul>
 </details>
 <details>
