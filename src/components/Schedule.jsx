@@ -59,7 +59,7 @@ export default function Schedule() {
                 : '날짜 선택'}
             </div>
             <div>
-              <AiOutlineCalendar />
+              <AiOutlineCalendar className="calender_icon" />
             </div>
           </SelectDateSt>
         </MiniWrapperSt>
@@ -72,7 +72,7 @@ export default function Schedule() {
                 : '날짜 선택'}
             </div>
             <div>
-              <AiOutlineCalendar />
+              <AiOutlineCalendar className="calender_icon" />
             </div>
           </SelectDateSt>
         </MiniWrapperSt>
@@ -82,7 +82,7 @@ export default function Schedule() {
         <SelectTimeSt>
           <div>{careTime.startTime ? careTime.startTime : '선택'}</div>
           <div className="arrow">
-            <IoIosArrowDown />
+            <IoIosArrowDown className="arrow_icon" />
           </div>
         </SelectTimeSt>
       </MiniWrapperSt>
@@ -91,7 +91,7 @@ export default function Schedule() {
         <SelectTimeSt>
           <div>{careTime.careTime ? careTime.careTime : '선택'}</div>
           <div className="arrow">
-            <IoIosArrowDown />
+            <IoIosArrowDown className="arrow_icon" />
           </div>
         </SelectTimeSt>
       </MiniWrapperSt>
@@ -116,8 +116,7 @@ export default function Schedule() {
 
 const ContainerSt = styled.section`
   width: 100%;
-  height: 458px;
-  padding: 32px 0 64px;
+  height: auto;
 `;
 const SelectDateWrapperSt = styled.div`
   width: 100%;
@@ -136,9 +135,14 @@ const SelectDateSt = styled.div`
   line-height: 20px;
   font-weight: 700;
   padding: 0 16px;
+
   div {
     display: flex;
     align-items: center;
+    color: #b6b3b3;
+  }
+  .calender_icon {
+    fill: #b6b3b3;
   }
 `;
 const MiniWrapperSt = styled.div`
@@ -166,5 +170,9 @@ const SelectTimeSt = styled.div`
   .arrow {
     width: 16px;
     height: 10px;
+
+    .arrow_icon {
+      fill: #b6b3b3;
+    }
   }
 `;

@@ -25,8 +25,8 @@ const Complete = () => {
     <Container>
       <div>📱 신청이 완료되었습니다!</div>
       <p>
-        신청하신 내용을 보고 케어코디님들이 지원할 예정입니다. 케어코디님들이
-        신청할 때 마다 앱이나 문자로 알림을 보내드립니다.
+        신청하신 내용을 보고 케어코디님들이 지원할 예정입니다. <br />
+        케어코디님들이 신청할 때 마다 앱이나 문자로 알림을 보내드립니다.
         <br /> 케어코디님의 지원 알림을 기다려주세요!
       </p>
       <EndButton onClick={endHandler}>끝내기</EndButton>
@@ -52,6 +52,7 @@ const Container = styled.section`
   }
   p {
     width: 100%;
+    font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #7d7878;
@@ -62,11 +63,21 @@ const EndButton = styled.button`
   width: 71px;
   height: 48px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 20px;
   padding: 14px 15px;
   border-radius: 4px;
   border: 1px solid #e2e2e2;
+
+  :hover {
+    color: #fff;
+    background-color: #ff8450;
+    transition: all 0.35s ease;
+  }
+  :not(:hover) {
+    background-color: #fff;
+    transition: all 0.35s ease;
+  }
 `;
 
 export default Complete;

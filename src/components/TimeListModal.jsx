@@ -18,8 +18,8 @@ export default function TimeListModal({ title, showListHandler }) {
     '오후 5시',
   ];
   const careTimeList = [
-    '1시간',
-    '2시간',
+    // '1시간',
+    // '2시간',
     '3시간',
     '4시간',
     '5시간',
@@ -80,21 +80,23 @@ export default function TimeListModal({ title, showListHandler }) {
 
 const BackgroundSt = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
-  top: -1px;
-  left: -16px;
+  top: 0;
+  left: 0;
   width: 360px;
-  height: 811px;
+  height: 812px;
   position: absolute;
+  border-radius: 10px;
 `;
 const ContainerSt = styled.div`
   background-color: #fff;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px 16px 10px 10px;
   position: absolute;
-  top: 256px;
+  bottom: 0;
   left: 0px;
   width: 360px;
-  height: 625px;
+  height: auto;
   z-index: 9;
+  overflow-y: scroll;
 `;
 const MiniWrapper = styled.div`
   display: flex;
@@ -102,6 +104,7 @@ const MiniWrapper = styled.div`
   align-items: center;
   padding: 32px 17.8px 16px 16px;
   .close {
+    font-size: 22px;
     :hover {
       cursor: pointer;
     }
@@ -121,6 +124,13 @@ const TimeListSt = styled.div`
   transition: 0.1s;
   :hover {
     cursor: pointer;
-    background-color: lightgray;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ff8450;
+    transition: all 0.35s ease;
+  }
+  :not(:hover) {
+    background-color: #fff;
+    transition: all 0.35s ease;
   }
 `;

@@ -25,17 +25,16 @@ export default App;
 
 const Wrapper = styled.div`
   width: 360px;
-  /* height: 900px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   padding: 0 16px;
   position: fixed;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(120, 120, 120, 0.1);
+  box-shadow: 0px 0px 10px rgba(120, 120, 120, 0.15);
 `;

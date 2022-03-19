@@ -40,26 +40,32 @@ const Box = styled.div`
   flex: none;
   order: 1;
   flex-grow: 1;
-  // margin: 0px 8px;
   font-size: 14px;
   font-weight: 700;
   div {
     font-size: 50px;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    background-color: #ffe0d3;
+    transition: all 0.35s ease;
+  }
+
+  &:not(:hover) {
+    background-color: #fff;
+    transition: all 0.35s ease;
+    > span {
+      color: #000;
+      transition: all 0.35s ease;
+    }
   }
   &.active {
     background-color: #ff8450;
+    transition: all 0.35s ease;
   }
   &.active > span {
     color: #fff;
+    transition: all 0.35s ease;
   }
-`;
-const Icon = styled.img`
-  font-family: Spoqa Han Sans Neo;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 68px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 10px;
 `;

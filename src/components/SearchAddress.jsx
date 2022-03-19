@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import { debounce } from 'lodash';
-import { FaSearch } from 'react-icons/fa';
 import AddressList from './AddressList';
 
 const SearchAddress = ({ openHandler, setIsOpen }) => {
@@ -85,6 +84,7 @@ const SearchAddressBox = styled.div`
   top: 0;
   left: 0;
   background-color: #fff;
+  border-radius: 10px;
   overflow: hidden;
   z-index: 9;
 `;

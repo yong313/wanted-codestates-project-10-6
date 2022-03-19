@@ -30,5 +30,5 @@ export default function CareSelectBoxes() {
 const BoxWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 590px;
+  height: auto;
 `;
