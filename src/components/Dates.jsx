@@ -52,7 +52,7 @@ const DateC = styled.div`\
   z-index: 8;
   width: 50px;
   height: 48px;
-  line-height: 60px;
+  line-height: 50px;
   cursor: pointer;
   color: ${({ startDay, endDay }) => (startDay || endDay) && 'white'};
   border-radius: ${({ startDay, endDay }) => (startDay || endDay) && '50%'};
