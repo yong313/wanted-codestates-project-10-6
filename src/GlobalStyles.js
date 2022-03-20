@@ -15,6 +15,9 @@ const GlobalStyles = createGlobalStyle`
     ::-webkit-scrollbar {
       display: none;
     }
+    body {
+      background-color: #efefef;
+    }
     input, textarea { 
       -moz-user-select: auto;
       -webkit-user-select: auto;

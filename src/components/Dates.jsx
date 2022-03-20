@@ -45,14 +45,14 @@ const DIV = styled.div`
   width: 50px;
   height: 48px;
 `;
-const DateC = styled.div`
+const DateC = styled.div`\
   position: absolute;
   font-weight: 700;
   text-align: center;
   z-index: 8;
   width: 50px;
   height: 48px;
-  line-height: 60px;
+  line-height: 50px;
   cursor: pointer;
   color: ${({ startDay, endDay }) => (startDay || endDay) && 'white'};
   border-radius: ${({ startDay, endDay }) => (startDay || endDay) && '50%'};
@@ -103,6 +103,9 @@ const DateC = styled.div`
   }}
   &:hover {
     background-color: rgba(255, 132, 80, 1);
+    border-radius: 5px;
+    transition: all 0.15s ease;
+    color: #fff;
   }
 `;
 const HalfBack = styled.div`

@@ -1,8 +1,8 @@
-
 import React, { useState, useMemo } from 'react';
 import styled, { css } from 'styled-components';
 import Calendar from './Calendar';
 import { useDispatch } from 'react-redux';
+
 import { setEndDate, setStartDate } from 'modules/careDate';
 export default function DateSelector({ showCalendarHandler }) {
   const [targetYear, setTargetYear] = useState(new Date().getFullYear());
@@ -37,9 +37,17 @@ export default function DateSelector({ showCalendarHandler }) {
       }
     })();
   }, []);
+
+  const closeModalHandler = () => {
+    showCalendarHandler();
+  };
+
   return (
     <ContainerSt>
       <TopSt>돌봄 날짜 선택</TopSt>
+      <div className="close" onClick={closeModalHandler}>
+        x
+      </div>
       <CalendarWrapper>
         <Calendar
           month={targetMonth}
@@ -54,7 +62,7 @@ export default function DateSelector({ showCalendarHandler }) {
           pos="top"
         />
       </CalendarWrapper>
-      <CalendarWrapper>
+      <CalendarWrapper className="two_calender_wrapper">
         <Calendar
           month={targetMonth + 1}
           setMonth={setTargetMonth}
@@ -69,7 +77,6 @@ export default function DateSelector({ showCalendarHandler }) {
         />
       </CalendarWrapper>
       <ButtonSt endDay={endDay} onClick={selectedHandler}>
-
         선택 완료
       </ButtonSt>
     </ContainerSt>
@@ -77,16 +84,31 @@ export default function DateSelector({ showCalendarHandler }) {
 }
 const ContainerSt = styled.div`
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
   width: 360px;
-  min-height: 800px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
   z-index: 9;
+  overflow-y: scroll;
+  .close {
+    position: absolute;
+    right: 17.8px;
+    top: 10px;
+    font-size: 22px;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  // 두번째 하단 캘린더 margin 값
+  .two_calender_wrapper {
+    margin-bottom: 81px;
+  }
 `;
 const TopSt = styled.div`
   text-align: center;
@@ -100,17 +122,22 @@ const TopSt = styled.div`
 `;
 const CalendarWrapper = styled.div`
   border-top: 1px solid #f6f6f6;
-  height: 444px;
+  height: auto;
+  // 첫번째 상단 캘린더 margin 값
+  margin-bottom: 34px;
 `;
+
 const ButtonSt = styled.div`
   background-color: #e2e2e2;
+  color: #b6b3b3;
+  border-radius: 0 0 10px 10px;
   width: 360px;
   text-align: center;
   line-height: 48px;
-  /* position: absolute; */
-  /* bottom: 0px; */
+
   height: 48px;
   font-weight: 700;
+
   ${({ endDay }) => {
     if (!endDay) return;
     return css`

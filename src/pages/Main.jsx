@@ -56,6 +56,7 @@ const Button = styled.button`
   top: 136px;
   background: #ff8450;
   border-radius: 40px;
+  font-weight: bold;
   margin: 32px 0px;
   color: #fff;
 `;

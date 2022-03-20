@@ -1,4 +1,4 @@
-import React, { Children, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import SearchAddress from './SearchAddress';
@@ -82,7 +82,7 @@ const Address = () => {
 
 const AddressBox = styled.div`
   width: 100%;
-  height: 600px;
+  height: auto;
 `;
 
 const AddressTop = styled.div`

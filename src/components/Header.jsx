@@ -43,6 +43,7 @@ const HeaderComponent = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  border-radius: 10px;
 
   button {
     color: #5b5555;
