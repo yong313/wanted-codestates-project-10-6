@@ -83,13 +83,15 @@
 <details>
   <summary>우혁주</summary>
     <ul>
-      <li> </li>
+      <li>form 확인, 전화번호 입력페이지</li>
+       <li>리덕스 이용하여 이전,다음 페이지</li>
     </ul>
 </details>
 <details>
   <summary>전용태</summary>
   <ul>
-    <li>  </li>
+    <li>주소 검색 UI 구현</li>
+    <li>juso.go.kr에서 제공하고 있는 OPEN API를 사용하여 주소검색 기능을 구현</li>
   </ul>
 </details>
 
