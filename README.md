@@ -61,7 +61,12 @@
 <details>
   <summary>홍인열</summary>
   <ul>
-   <li> </li>
+   <li> 
+     스케줄설정 달력뼈대 구현
+달력 날짜선택 상태관리
+돌봄 시간 선택 컴포넌트 구현 및 상태관리
+주소검색 구현 서포트
+     </li>
   </ul>
 </details>
 <details>
